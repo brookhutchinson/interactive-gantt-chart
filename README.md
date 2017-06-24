@@ -1,2 +1,2 @@
-# interactive-gantt-chart
-Data Visualization showing the duration of tasks during a selected start date and end date
+# Interactive Gantt Chart
+Data Visualization showing the duration of tasks during a selected task start date and task end date
