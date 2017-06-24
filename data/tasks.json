@@ -1,0 +1,29 @@
+[
+  {
+    "CustomerInfo": {
+      "CustomerName": "Allen Stone"
+    },
+    "TaskDuration": {
+      "StartDate": "2017-06-08T05:00:00",
+      "EndDate": "2017-06-30T05:00:00"
+    }
+  },
+  {
+    "CustomerInfo": {
+      "CustomerName": "George Ezra"
+    },
+    "JobDuration": {
+      "StartDate": "2017-06-08T05:00:00",
+      "EndDate": "2017-06-11T05:00:00"
+    }
+  },
+  {
+    "CustomerInfo": {
+      "CustomerName": "Bob Schneider"
+    },
+    "TaskDuration": {
+      "StartDate": "2017-06-04T05:00:00",
+      "EndDate": "2017-07-07T05:00:00"
+    }
+  }
+]
