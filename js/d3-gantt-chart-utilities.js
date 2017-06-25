@@ -171,33 +171,64 @@ d3.json("data/tasks.json", function(error, data) {
 
 
   // _______________________________________________________________________
-  // navigation button click event handlers used to set x-axis datetime domain
+  // _______________________________________________________________________
+  // navigation button click event handlers
+  $(".btn").click(function() {
+    // change all buttons color to white
+    $(".btn").removeClass("btn-primary").addClass("btn-secondary");
+  });
+
+
   $("#oneDay").on("click", function() {
+    // change button color to blue
+    $(this).removeClass("btn-secondary").addClass("btn-primary");
+
+    // change time domain
     changeTimeDomain("1day");
   });
 
 
   $("#oneWeek").on("click", function() {
+    // change button color to blue
+    $(this).removeClass("btn-secondary").addClass("btn-primary");
+
+    // change time domain
     changeTimeDomain("1week");
   });
 
 
   $("#twoWeeks").on("click", function() {
+    // change button color to blue
+    $(this).removeClass("btn-secondary").addClass("btn-primary");
+
+    // change time domain
     changeTimeDomain("2weeks");
   });
 
 
   $("#oneMonth").on("click", function() {
+    // change button color to blue
+    $(this).removeClass("btn-secondary").addClass("btn-primary");
+
+    // change time domain
     changeTimeDomain("1month");
   });
 
 
   $("#threeMonths").on("click", function() {
+    // change button color to blue
+    $(this).removeClass("btn-secondary").addClass("btn-primary");
+
+    // change time domain
     changeTimeDomain("3months");
   });
 
 
   $("#sixMonths").on("click", function() {
+    // change button color to blue
+    $(this).removeClass("btn-secondary").addClass("btn-primary");
+
+    // change time domain
     changeTimeDomain("6months");
   });
 });
