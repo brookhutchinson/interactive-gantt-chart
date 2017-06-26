@@ -34,6 +34,16 @@ d3.json("data/tasks.json", function(error, data) {
   // });
 
 
+  // create array of customer names
+  var customerNames = data.map(function(d) {
+    return d.CustomerInfo.CustomerName;
+  });
+
+
+  // sort customerNames array in ascending order by customer name
+  customerNames.sort();
+
+
   // convert each date string to a date object
   // loop through each object
   data.forEach(function(d) {
@@ -41,12 +51,6 @@ d3.json("data/tasks.json", function(error, data) {
     var dateParser = d3.timeParse("%Y-%m-%dT%H:%M:%S");
     d.TaskDuration.StartDate = dateParser(d.TaskDuration.StartDate);
     d.TaskDuration.EndDate = dateParser(d.TaskDuration.EndDate);
-  });
-
-
-  // create array of customer names
-  var customerNames = data.map(function(d) {
-    return d.CustomerInfo.CustomerName;
   });
 
 
